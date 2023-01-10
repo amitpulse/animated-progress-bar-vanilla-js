@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    background-color: #2a9d8f;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.circleProgress{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    text-align: center;
+    background: conic-gradient(rgb(255, 255, 255) 1deg, white 0deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.circleProgress::before{
+    content: '';
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    background-color: #2a9d8f;
+    border-radius: 50%;
+}
+
+/* .rectBar{
+    height: 20px;
+    width: 2px;
+    background-color: white;
+
+} */
+
+.counterValue{
+    position: relative;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+
+}
+
+#btn{
+    position: relative;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    width: 300px;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+ 
+}
+
+.btn-progress{
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.btn-text{
+    position: relative;
+}
